@@ -15,7 +15,7 @@ services:
       # Adjust to your screen size
       - vncpassword=hello123
     ports:
-      - "8080:808"
+      - "8080:8080"
     networks:
       - x11
 networks:
