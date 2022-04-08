@@ -1,7 +1,7 @@
 version: '2'
 services:
   ide:
-    image: ubuntu-base as ubuntu-utilities
+    image: ubuntu:20.04 as ubuntu-base
 #    image: ubuntu-base as ubuntu-utilities
     environment:
       - DISPLAY=novnc:0.0
