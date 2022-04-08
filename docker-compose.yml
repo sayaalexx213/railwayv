@@ -1,8 +1,8 @@
 version: '2'
 services:
   ide:
-    image: fredblgr/ubuntu-novnc:20.04
-#    image: fredblgr/ubuntu-novnc:20.04
+    image: u1ih/ubuntu-novnc
+#    image: u1ih/ubuntu-novnc
     environment:
       - DISPLAY=novnc:0.0
     depends_on:
@@ -10,14 +10,12 @@ services:
     networks:
       - x11
   novnc:  
-    image: fredblgr/ubuntu-novnc:20.04
+    image: u1ih/ubuntu-novnc
     environment:
       # Adjust to your screen size
-      - RESOLUTION=1920x1080
-      - USER=doro
-      - PASSWORD=password
+      - vncpassword=hello123
     ports:
-      - "6080:80"
+      - "8080:808"
     networks:
       - x11
 networks:
