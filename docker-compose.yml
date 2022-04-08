@@ -1,8 +1,8 @@
 version: '2'
 services:
   ide:
-    image: psharkey/intellij:latest
-#    image: psharkey/netbeans-8.1:latest
+    image: ubuntu-base as ubuntu-utilities
+#    image: ubuntu-base as ubuntu-utilities
     environment:
       - DISPLAY=novnc:0.0
     depends_on:
