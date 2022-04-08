@@ -10,7 +10,7 @@ services:
     networks:
       - x11
   novnc:  
-    image: theasp/novnc:latest
+    image: ubuntu-base as ubuntu-utilities
     environment:
       # Adjust to your screen size
       - SCREEN_WIDTH=1280 
