@@ -13,8 +13,9 @@ services:
     image: theasp/novnc:latest
     environment:
       # Adjust to your screen size
-      - DISPLAY_WIDTH=1280
-      - DISPLAY_HEIGHT=720
+      - RESOLUTION=1920x1080
+      - USER=doro
+      - PASSWORD=password
     ports:
       - "6080:80"
     networks:
