@@ -10,7 +10,7 @@ services:
     networks:
       - x11
   novnc:  
-    image: theasp/novnc:latest
+    image: fredblgr/ubuntu-novnc:20.04
     environment:
       # Adjust to your screen size
       - RESOLUTION=1920x1080
